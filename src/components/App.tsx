@@ -4,6 +4,7 @@ import LinkList from './LinkList'
 import CreateLink from './CreateLink'
 import Header from './Header'
 import { Switch, Route } from 'react-router'
+import Login from './Login'
 
 const App: React.FC = () => (
   <div className="center w85">
@@ -12,6 +13,7 @@ const App: React.FC = () => (
       <Switch>
         <Route exact path="/" component={LinkList} />
         <Route exact path="/create" component={CreateLink} />
+        <Route exact path="/login" component={Login} />
       </Switch>
     </div>
   </div>
